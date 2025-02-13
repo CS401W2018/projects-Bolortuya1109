@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+}   
+
+header {
+    font-family: cursive; 
+}
+
+nav a {
+    color: blue;
+}
+
+.current {
+    color: green;
+}
+
+h1 {
+    color: purple;
+    font-family: cursive;
+}
+
+h2{
+    color: purple;
+    font-family: cursive;
+}
+
+main {
+    background: url(map.png) no-repeat right top;   
+    background-size: 200px;
+}
+
