@@ -1,0 +1,26 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.figstone {
+    width: 150px;
+    border: 600px thin solid #000; 
+    text-align: center;
+    margin: 150px auto;
+}
+
+header {
+    background-color: green;
+    width: 70%;
+    margin: 30px auto;
+    padding: 50px 30px 100px 3px; 
+}
+
+header h1 {
+    border: 10px solid #000;
+    margin-bottom: 0;
+}
+
+img {
+    width: 600px;
+}
+
