@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+header {
+    background-color: rgb(139, 199, 139);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(87, 168, 141);
+}
+
+nav a {
+    display: none;
+    padding: 5px;
+    color: white;
+    text-decoration: none
+}
+
+.card {
+    border: thin solid #000;
+    box-shadow: 3px 3px 3px rgb(107, 71, 71);
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card figure {
+    margin: 0;
+}
