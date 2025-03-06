@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(139, 199, 139);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(87, 168, 141);
+}
+
+nav a {
+    display: block;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none
+}
+
+.card {
+    border: thin solid #000;
+    box-shadow: 3px 3px 3px rgb(107, 71, 71);
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card figure {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #222;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .middle {
+        order: -1
+    }
+}
