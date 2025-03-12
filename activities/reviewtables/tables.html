@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <h1>Tables</h1>
+        <table class="schedule">
+            <caption><strong>Class Schedule</strong></caption>
+         <thead>
+        <tr>
+            <th>Department</th>
+            <th>Number</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Credits</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+        <tr>
+            <th colspan="5">Winter Semester 2025</th>
+        </tr>
+        <tr>
+            <td>EIL</td>
+            <td rowspan="2">320</td>
+            <td>10:00-10:50</td>
+            <td>Mckay157</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>EIL</td>
+            <td>10:00-10:50</td>
+            <td>Mckay157</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>CS</td>
+            <td>101</td>
+            <td>11:00-11:50</td>
+            <td>P2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th id="spring2025" colspan="5" >Spring Semester 2025</th>
+        </tr>
+        <tr>
+            <td>CS</td>
+            <td>101</td>
+            <td>11:00-11:50</td>
+            <td>P2</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+        <tr>
+            <th id="totalcredits" colspan="4">Total Credits</th>
+            <td headers="totalcredits">15</td>
+        </tr>
+    </table>
+    <p>Why don't we use the border attribute?</p>
+    <p>The border attribute is outdated and replaced by CSS, which gives more control over styling. Instead of using (table border="1"), it's better to use table (border: 1px solid black; ) in CSS for a cleaner and more flexible design.</p>
+    <p>What is the easiest way to color every other row a different color?</p>
+    <p>We can use the nth-child selector in CSS to color alternating rows easily. </p>
+    </main>    
+</body>
+</html>
