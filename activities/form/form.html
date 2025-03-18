@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <div class="from-row">
+                <label for="fname">Full name:</label>
+                <input type="text" name="fullname" id="fname" value="Bolortuya">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="bolor.bolor0503@gmail.com">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="State">State</label>
+                <select name="state" id="state">
+                   <option value="blank"></option>
+                   <option value="CO">Colorado</option>
+                   <option value="Hi" selected>Hawaii</option>
+                   <option value="Ut">Utah</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <div>Year in School:</div>
+                <label><input type="radio" name="year1" value="freshman">Freshman</label>
+                <label><input type="radio" name="year2" value="sophmore">Sophmore</label>
+                <label><input type="radio" name="year3" value="junior">Junior</label>
+                <label><input type="radio" name="year4" value="senior">Senior</label>
+            </div>
+            <br>
+            <div class="form-row">
+                <input type="Submit">
+            </div>
+        </form>
+    </main>
+    <p><h3>Questions:</h3></p>
+    <p>The form tag has an "action" attribute. What does it do?</p>
+    <p>It specifies the URL where form data is sent when submitted.</p>
+    <p>The form tag has a "method" attribute. What does it do?</p>
+    <p>Method is to define how data is sent (get) or (post).</p>
+    <p>What is the difference between a "POST" and a "GET"?</p>
+    <p>Get is to send data in the URL, less secure, limited data, used for searches.
+        Post sends data in the request body, more secure, allows large data, used for forms like login/signup.</p>
+    <footer>
+        <p>&copy; 2025 Bolortuya Enkhbayar</p>
+    </footer>
+</body>
+</html>
