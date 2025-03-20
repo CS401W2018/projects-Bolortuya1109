@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Create Account</legend>
+            <div class="from-row">
+                <label for="fname">Full name:</label>
+                <input type="text" name="fullname" id="fname" value="Bolortuya">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="bolor.bolor0503@gmail.com">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <div class="form-row">
+                <label for="State">State</label>
+                <select name="state" id="state">
+                   <option value="blank"></option>
+                   <option value="CO">Colorado</option>
+                   <option value="Hi" selected>Hawaii</option>
+                   <option value="Ut">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div class="radio-row">
+                <div class="radio-spacer">Year in School:</div>
+                <label><input type="radio" name="year1" value="freshman">Freshman</label>
+                <label><input type="radio" name="year2" value="sophmore">Sophmore</label>
+                <label><input type="radio" name="year3" value="junior">Junior</label>
+                <label><input type="radio" name="year4" value="senior">Senior</label>
+            </div>
+            <div class="from-row">
+                <div class="form-spacer"></div>
+                <label><input type="checkbox" name="remember" value="remember">Remember Me</label>
+            </div>
+            <div class="from-row">
+                <label for="Comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-spacer"></div>
+                <input type="Submit">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    <p><h3>Questions:</h3></p>
+    <p>What are different ways to style your form?</p>
+    <p>Custom Checkboxes replace default checkboxes and radio buttons with custom styles. You can use Flexbox to create responsive forms with centered fields or flexible layouts. </p>
+    <p>Why does the professor like to use flex?</p>
+    <p>Flexbox makes it easier to create complex layouts without relying on floats or positioning.</p>
+    <footer>
+        <p>&copy; 2025 Bolortuya Enkhbayar</p>
+    </footer>
+</body>
+</html>
