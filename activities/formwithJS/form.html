@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Create Account</legend>
+            <div class="from-row">
+                <label for="fname">Full name:</label>
+                <input type="text" name="fullname" id="fname" value="Bolortuya">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="bolor.bolor0503@gmail.com">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <div class="form-row">
+                <label for="State">State</label>
+                <select name="state" id="state">
+                   <option value="blank"></option>
+                   <option value="CO">Colorado</option>
+                   <option value="Hi" selected>Hawaii</option>
+                   <option value="Ut">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div class="radio-row">
+                <div class="radio-spacer">Year in School:</div>
+                <label><input type="radio" name="year1" value="freshman">Freshman</label>
+                <label><input type="radio" name="year2" value="sophmore">Sophmore</label>
+                <label><input type="radio" name="year3" value="junior">Junior</label>
+                <label><input type="radio" name="year4" value="senior">Senior</label>
+            </div>
+            <div class="from-row">
+                <div class="form-spacer"></div>
+                <label><input type="checkbox" name="remember" value="remember">Remember Me</label>
+            </div>
+            <div class="from-row">
+                <label for="Comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-spacer"></div>
+                <input type="Submit">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    <p><h3>Questions:</h3></p>
+    <p>What is JavaScript? How did it get its name?</p>
+    <p>JavaScript is a programming language used to make websites interactive. It allows things like forms, animations, and real-time updates without needing to reload the page.</p>
+    <p>What are the two ways you can run JavaScript?</p>
+    <p>In the browser: JavaScript runs directly in our web browser when we visit a website.
+       On the server: JavaScript can also run on a server using a tool called Node.js.</p>
+    <p>What was the most popular front-end js library?</p>
+    <p>Before modern tools, jQuery was the most popular JavaScript library. It made things like animations and clicking easier.</p>
+    <p>What is the most popular front-end js library today?</p>
+    <p>Today, React is the most popular JavaScript library for building websites, followed by Vue.js. React helps developers create interactive user interfaces easily.</p>
+    <footer>
+        <p>&copy; 2025 Bolortuya Enkhbayar</p>
+    </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted');
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || email) {
+                alert ("You need a name and email");
+                return
+            }
+
+            if (!age || age<18); {
+                return
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData);
+            });
+    </script>
+</body>
+</html>
