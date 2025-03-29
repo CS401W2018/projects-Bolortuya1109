@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="ajax.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Create Account</legend>
+            <div class="from-row">
+                <label for="fname">Full name:</label>
+                <input type="text" name="fullname" id="fname" value="Bolortuya">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="bolor.bolor0503@gmail.com">
+            </div>
+            <br>
+            <div class="from-row">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <div class="form-row">
+                <label for="State">State</label>
+                <select name="state" id="state">
+                   <option value="blank"></option>
+                   <option value="CO">Colorado</option>
+                   <option value="Hi" selected>Hawaii</option>
+                   <option value="Ut">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div class="radio-row">
+                <div class="radio-spacer">Year in School:</div>
+                <label><input type="radio" name="year1" value="freshman">Freshman</label>
+                <label><input type="radio" name="year2" value="sophmore">Sophmore</label>
+                <label><input type="radio" name="year3" value="junior">Junior</label>
+                <label><input type="radio" name="year4" value="senior">Senior</label>
+            </div>
+            <div class="from-row">
+                <div class="form-spacer"></div>
+                <label><input type="checkbox" name="remember" value="remember">Remember Me</label>
+            </div>
+            <div class="from-row">
+                <label for="Comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-spacer"></div>
+                <input type="Submit">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    <p><h3>Questions:</h3></p>
+    <p>What is AJAX?</p>
+    <p>AJAX stands for Asynchronous JavaScript and XML. It allows web pages to load and update data without refreshing the entire page. This makes websites feel faster and more interactive.</p>
+    <p>Why do you put your JS Code in a separate file?</p>
+    <p>We put our JavaScript in a separate file because it keeps our code organized and clean. It makes our HTML file less cluttered. It allows reusability of our code across different pages. It can improve performance because the browser can cache the JavaScript file.</p>
+    <footer>
+        <p>&copy; 2025 Bolortuya Enkhbayar</p>
+    </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted');
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || email) {
+                alert ("You need a name and email");
+                return
+            }
+
+            if (!age || age<18); {
+                return
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData);
+            });
+    </script>
+</body>
+</html>
