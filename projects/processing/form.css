@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main, section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    background-color: rgb(120, 183, 120);
+    color: white;
+    padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.checkbox,
+.radio {
+    margin-bottom: 15px;
+}
+
+.checkbox input,
+.radio input {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    label, input, textarea, select, button {
+        display: block;
+        width: 100%;
+    }
+
+    .checkbox,.radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkbox input,
+    .radio input {
+        margin-bottom: 10px;
+    }
+}
