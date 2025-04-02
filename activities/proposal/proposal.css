@@ -1,0 +1,30 @@
+body {
+    font-family: cursive;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: green;
+    
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+  
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+.section {
+    margin-bottom: 20px;
+    color: green;
+    font-size: 1.3em;
+}
